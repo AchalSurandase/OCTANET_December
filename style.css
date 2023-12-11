@@ -1,0 +1,410 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    max-width: 80vw;
+    font-family:'Hedvig Letters Serif', serif;
+}
+/*Navbar*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #656161;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(244, 232, 232);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(154, 141, 141);
+  }
+  
+.show {
+    display: block;
+  }
+
+  /*navbar */
+.navbar{
+    display: flex;
+    height: 67px;
+    
+}
+
+
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+
+}
+
+.topleft{
+    width: 50%;
+    
+
+}
+
+.topright{
+    width: 50%;
+    padding:10px;
+}
+
+.section1{
+    max-height: 100vh;
+}
+
+.section1 h1{
+    font-size: 2rem;
+}
+
+.logo{
+    font-size: 1.7rem;
+    cursor: pointer;
+
+}
+
+.btn{
+    display: inline-block;
+    background:var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 200;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+}
+
+header.sticky{
+    padding: 8px 17%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+
+.feature{
+    padding-top: 30px;
+    padding-bottom: 2px;
+    
+    
+}
+
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto)); 
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.row-img{
+    overflow: hidden;
+    width: 200px;
+    height:200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 200%;
+    cursor: pointer;
+}
+
+.row-img img{
+    width:180%;
+    display: block;
+    transition: transform 0.2s;
+
+}
+
+.row-img img:hover{
+    transform: scale(1.2);
+}
+
+.feature-content h4{
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.feature-content h4:hover{
+    color: var(--main-color);
+}
+
+.design1 {
+      display:grid;
+      grid-template-columns: repeat(2 ,1fr);
+      align-items: center;
+      gap:9rem;
+      padding-top: 50px;
+      
+
+}
+
+.design1-img img{
+    width:110%;
+    height: 135%;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.design1-text h5{
+    font-size: 17px;
+    font-weight: 600;
+    color:var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    
+}
+
+.design1-text h2{
+     font-size: 30px;
+     font-weight: 800;
+     line-height: 1.2;
+     margin-bottom: 25px;
+     
+
+}
+
+.design1-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color:black;
+    margin-bottom: 35px;
+    }
+
+.btn1
+{
+    width: 50px;
+    transform: translateX(10px);
+    transition: all .50s ease;
+    background: rgb(100, 91, 107);
+    color:white;
+    
+}
+              
+#more {display: none;}
+
+.center-text{
+    text-align: center;
+}
+
+.center-text h2{
+    font-size: 33px;
+    font-weight: 1000;
+    padding: 35px;
+}
+
+.design2-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+
+}
+
+.box{
+    position: relative;
+
+}
+
+.box img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(100%);
+    transition: all .3s cubic-bezier(.499,.05,.55,.95);
+    will-change: filter;
+    display: block;
+}
+
+.box h6{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-size: 20px;
+    font-weight:1000;
+    color: rgb(24, 1, 1);
+}
+
+.box h4{
+    padding: 20px;
+    left: 25px;
+    top: 10px;
+    font-size: 20px;
+    font-weight:500;
+    color: rgb(24, 1, 1);
+    
+}
+
+.box img:hover{
+    filter: brightness(90%) hue-rotate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+
+}
+
+.btn2{
+
+    width: 100px;
+    
+    transition: all .50s ease;
+    background: rgb(239, 245, 163);
+    color:rgb(25, 20, 20);
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+    
+}
+
+.btn2:hover{
+    transform: translateX(10px);
+    border: 2px solid var();
+    color: rgb(218, 218, 131);
+}
+
+.center-btn{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.rose{
+    width: 260px;
+    margin-left: 120px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.topright .scene1{
+    width: 900px;
+    
+    margin-right: 200px;
+}
+
+.section-2{
+    padding:30px;
+    margin-top: 2rem;
+}
+
+.section-2 h1{
+    font-size: 2.5rem;
+    padding:30px;
+}
+
+.section-2 p{
+    padding: 0 8vw;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+.boxes
+{   
+    padding: 8px 0px;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.boxes h2{
+    font-size: 1.6rem;
+    padding: 18px 0px;
+}
+
+.highlighted{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.boxes ul{
+    list-style-type: none;
+}
+
+.boxes ul li{
+    margin: 12px 2px;
+
+}
+
+.compareplans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section3 table{
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+.section3 table th{
+   width: 23vw;
+   border-bottom: 2px solid black;
+   padding: 15px 0;
+}
+
+.section3 table td{
+    border-bottom: 2px solid black;
+ }
+
+.section3 h1{
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.section3{
+    padding: 50px;
+}
+
+footer{
+    padding: 33px;
+    text-align: center;
+}
